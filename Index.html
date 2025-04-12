@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div class="previous-operand" id="previous-operand"></div>
+            <div class="current-operand" id="current-operand">0</div>
+        </div>
+        <div class="buttons">
+            <button class="clear" onclick="handleClear()">AC</button>
+            <button class="operation" onclick="handleDelete()">DEL</button>
+            <button class="operation" onclick="handleOperation('/')">÷</button>
+            <button onclick="handleNumber('7')">7</button>
+            <button onclick="handleNumber('8')">8</button>
+            <button onclick="handleNumber('9')">9</button>
+            <button class="operation" onclick="handleOperation('*')">×</button>
+            <button onclick="handleNumber('4')">4</button>
+            <button onclick="handleNumber('5')">5</button>
+            <button onclick="handleNumber('6')">6</button>
+            <button class="operation" onclick="handleOperation('-')">−</button>
+            <button onclick="handleNumber('1')">1</button>
+            <button onclick="handleNumber('2')">2</button>
+            <button onclick="handleNumber('3')">3</button>
+            <button class="operation" onclick="handleOperation('+')">+</button>
+            <button onclick="handleNumber('0')">0</button>
+            <button onclick="handleDecimal()">.</button>
+            <button class="equals" onclick="handleEquals()">=</button>
+        </div>
+    </div>
+
+
+
+    <script src="/Script.js"></script>
+</body>
+</html>
